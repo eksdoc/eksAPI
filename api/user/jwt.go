@@ -57,7 +57,7 @@ func Auth() gin.HandlerFunc {
 			c.Set("userName", claim.Name)
 			c.Next()
 		} else {
-			c.AbortWithStatusJSON(statuscode.Unauthorized, gin.H{"err": "未登录"})
+			c.AbortWithStatus(statuscode.Unauthorized)
 		}
 	}
 }
