@@ -1,0 +1,17 @@
+title="测试环境开始运行"
+secret = "nuHKZbpZXquAsBda"
+
+# web 服务
+[web]
+    url="127.0.0.1"
+    port="8081"
+
+# mongo数据库
+[mongo]
+    uri="mongodb://192.168.79.132:27017/admin"
+    database="eksapi"
+
+# 日志服务
+[log]
+    database="log"
+    collection="test"
