@@ -35,7 +35,7 @@ var Config _config
 // 根据环境变量解析对应的配置信息
 func InitConfig(env string) {
 	// 读取配置文件
-	file, err := ioutil.ReadFile("./config/" + env + ".toml")
+	file, err := ioutil.ReadFile("./configs/" + env + ".toml")
 	if err != nil {
 		log.Fatal("读取配置文件失败", err.Error())
 	}
